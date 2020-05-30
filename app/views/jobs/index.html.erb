@@ -1,1 +1,10 @@
-<h1><%= @jobs.inspect %></h1>
+<% @jobs.each do |job| %>
+  <div>
+    <h1><%= job.username %></h1><br />
+    <i><%= job.work %></i><br />
+    <p><%= job.rate %></p><br />
+    <p><%= job.contact %></p><br />
+  </div>
+
+  <hr />
+  <% end %>
