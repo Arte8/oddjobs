@@ -11,7 +11,7 @@ class JobsController < ApplicationController
   end
 
   def create
-    Job.create(job_params)
+    current_user.jobs.create(job_params)
     redirect_to root_path
   end
 
