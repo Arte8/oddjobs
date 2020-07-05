@@ -20,8 +20,4 @@ class JobsController < ApplicationController
   def job_params
     params.require(:job).permit(:username, :work, :rate, :contact)
   end
-  # def index
-  # @jobs = Job.search(params[:search])
-  # end
-
 end
