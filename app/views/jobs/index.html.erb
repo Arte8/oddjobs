@@ -1,0 +1,12 @@
+<% @jobs.each do |job| %>
+  <div class="booyah-box col-10 offset-1">
+    <h1><%= job.username %></h1><br />
+    <i><%= job.work %></i><br /><br />
+    <p><%= job.rate %></p><br />
+    <p><%= job.contact %></p><br />
+
+    <% if job.user.present? %>
+      <small><%= jbb.user.email %></small>
+    <% end %>
+<% end %>
+  </div>
